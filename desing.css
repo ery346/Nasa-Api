@@ -1,0 +1,78 @@
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    width: 1090px;
+    background-image: linear-gradient( rgb(123, 206, 233), rgba(28, 149, 189, 0.212),rgba(15, 197, 146, 0.375));
+    text-align: justify;
+}
+
+body{
+    background-image: url(./light-blue-4073x1746.jpg);
+    background-size: 240rem;
+    width:95%;margin: 0 auto;min-width:200px;max-width:2000px
+}
+
+#fondo{
+    background-image: linear-gradient( rgba(217, 123, 233, 0.525), rgba(189, 28, 167, 0.212),rgba(109, 15, 197, 0.375));
+    padding-block: 2rem;
+    width:1090px;
+}
+
+#informacion{
+    color: rgb(5, 5, 5);
+    width: 1058px;
+    background-image: linear-gradient( rgba(123, 206, 233, 0.368), rgba(28, 149, 189, 0.212),rgba(15, 197, 146, 0.531));
+    text-align: justify;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+#boton{
+    text-align: center;
+
+}
+#btn{
+    cursor: pointer;
+}
+
+img{
+
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    width: 1024px ;
+    height: 680px;
+}
+
+footer{
+    color: rgb(248, 242, 242);
+    width: 1090px;
+    background-image: linear-gradient( rgb(123, 206, 233), rgba(28, 149, 189, 0.212),rgba(15, 197, 146, 0.375));
+    text-align: center;
+}
+
+.astronauta{
+    position: absolute;
+    left: 1170px;
+    top: 10rem;
+    width: 20rem;
+    height: 25rem;
+    cursor: pointer;
+    transition: all .3s ease-out;
+
+}
+.astronauta:hover{
+   
+    width: 21rem;
+    height: 26rem;
+}
+.caat{
+    position: absolute;
+    left: 1120px;
+    top: 50rem;
+    width: 20rem;
+    height: 20rem;
+
+}
