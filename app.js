@@ -20,20 +20,33 @@ function generarApi(){
 
 function  mostrarDatos(datos){
     limpiarHTML();
-    const {copyright, date, explanation, title, hdurl} = datos;
-
+    const {copyright, date, explanation, title, url} = datos;
     
+    if (datos.url === 'youtube') {
+        
+        const a = document.createElement('p');
+        a.innerHTML = `
+        <p>Titulo : ${title}</p>
+        Descripcion de la imagen :  <p>${explanation}</p>
+        <p></p>
+        <iframe src="${url}" width="900" height="800"  allowfullscreen></iframe>
+        
+        `;
+    informacion.appendChild(a);
+    }else{
+        const a = document.createElement('p');
+        a.innerHTML = `
+        <p>Titulo : ${title}</p>
+        Descripcion de la imagen :  <p>${explanation}</p>
+        <img src="${url}" width="900" height="800" /img>
+      
+        `;
+    informacion.appendChild(a);
+    }
 
-    const a = document.createElement('p');
     const b = document.createElement('p');
-
     const gift = document.createElement('p');
 
-    a.innerHTML = `
-    <p>Titulo : ${title}</p>
-    Descripcion de la imagen :  <p>${explanation}</p>
-    <img src="${hdurl}" width="1024" height="1005" /img>
-    `;
 
     b.innerHTML = `
     Copyright : ${copyright}
@@ -49,8 +62,7 @@ function  mostrarDatos(datos){
 
     gifts.appendChild(gift);
     pieDePagina.appendChild(b)
-    informacion.appendChild(a);
-    console.log(datos)
+  
 }
 
 
